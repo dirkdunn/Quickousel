@@ -1,0 +1,46 @@
+* {
+ padding:0;
+}
+
+#carousel {
+  width: 450px;
+  height:300px;
+  position: relative;
+}
+
+.carousel-buttons {
+  position: absolute;
+  z-index: 100000;
+  bottom: .5em;
+  left: 50%;
+}
+
+.carousel-buttons .carousel-button {
+  padding: 0 1em 0 0;
+  font-size: 1.4em;
+  cursor: pointer;
+  color: rgba(217, 217, 217, .4);
+}
+
+.carousel-buttons .carousel-button:hover {
+  color: rgba(217, 217, 217, .7);
+}
+
+.active-button {
+  color: rgba(217, 217, 217, 1)!important;
+}
+
+#carousel ul.carousel, #carousel ul.carousel li.item{
+  width: 100%;
+  height:100%;
+}
+
+#carousel .active {
+  display: block!important;
+}
+
+.carousel li.item {
+  display: inline;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+}

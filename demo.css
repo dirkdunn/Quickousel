@@ -166,8 +166,8 @@ h3,p.options {
 		font-size:1.1em;
 	}
 
-	#formDemo .right code {
-		/*width:100%;*/
+	#formDemo code {
+		line-height:1.5;
 	}
 
 	h3,p.options {

@@ -46,8 +46,8 @@ select{
 
 #parent {
 	padding: 1em;
-	width:450px; 
-	height:300px; 
+	width:600px; 
+	height:400px; 
 	box-shadow: 1px 0px 10px #B6B6B6;
 	margin: 0 auto;
 }
@@ -98,7 +98,7 @@ select{
 	padding:0;
 }
 
-h3 {
+h3,p.options {
 	text-align:left;
 	margin-bottom:.1em;
 }
@@ -142,7 +142,8 @@ h3 {
 	}
 
 	#parent {
-		max-width:90%;
+		width:450px;
+		height:300px;
 		/*height: auto;*/
 	}
 
@@ -165,7 +166,19 @@ h3 {
 		/*width:100%;*/
 	}
 
-	h3 {
+	h3,p.options {
 		text-align:center;
+	}
+}
+
+@media (max-width:550px){
+	#parent {
+		width:360px;
+		height:240px;
+		/*height: auto;*/
+	}
+
+	h1.hey {
+		font-size:1.5em;
 	}
 }

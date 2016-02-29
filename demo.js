@@ -41,15 +41,7 @@
 			setButtons.call(this);
 		});
 
-		// add to lib?
-		$('#quickousel').on('resize',function(){
-			// if( window.innerWidth < 768){
-				var carouselButtons = $('#quickousel .carousel-buttons');
-				var buttonAdjust = '-' + String(parseInt( /\d+/.exec(carouselButtons.css('width')) ) / 2) + 'px'
-				carouselButtons.css('margin-left',buttonAdjust);
-			// }
-		});
-	};
+		};
 
 	function createObject(){
 		var stringObj = JSON.stringify(theObject)

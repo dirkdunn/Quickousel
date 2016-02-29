@@ -1,10 +1,15 @@
+@font-face {
+	font-family:'ralewayRegular';
+	src: url('font/raleway/Raleway-Regular.ttf');
+}
+
 body {
 	text-align:center;
 	padding:1em;
 }
 
 .hey {
-	font-family:sans-serif;
+	font-family:'ralewayRegular', sans-serif, Georgia;
 }
 
 p.hey ,label.hey{

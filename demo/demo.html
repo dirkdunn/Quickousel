@@ -1,38 +1,122 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Quickosel Demo</title>
-	<link rel="stylesheet" href="c-css.css" />
 	<meta charset="UTF-8">
-
-	<style>
-	body {
-		text-align:center;
-	}
-
-	#hey {
-		font-family:sans-serif;
-	}
-	#parent {
-		padding: 1em 2em 3em 2em;
-		width:450px;
-		height:300px;
-		box-shadow: 1px 0px 10px #d9d9d9;
-		margin: 0 auto;
-	}
-	</style>
+	<link rel="stylesheet" href="demo.css"/>
+	<script src="jquery.js"></script>
 </head>
 <body>
-	<h1 id="hey">The worlds easiest carousel, Quickousel.</h1>
+	<h1 class="hey">The easiest carousel, Quickousel.</h1>
+	<p class="hey">This demo uses the unsplash API, so if window is black for a second be patient.</p>
+	
 	<div id="parent">
-		<div id="carousel">
-		  <img src="https://images.unsplash.com/photo-1453743327117-664e2bf4e951?crop=entropy&fit=crop&fm=jpg&h=800&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1200" />
-		  <img src="https://images.unsplash.com/photo-1453170804045-277782641dca?crop=entropy&fit=crop&fm=jpg&h=625&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1200" />
-		  <img src="https://images.unsplash.com/photo-1452800185063-6db5e12b8e2e?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1200" />
-		  <img src="https://images.unsplash.com/photo-1452716726610-30ed68426a6b?crop=entropy&fit=crop&fm=jpg&h=700&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1200" />
-		  <img src="https://images.unsplash.com/photo-1452274381522-521513015433?crop=entropy&fit=crop&fm=jpg&h=800&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1200"/>
+		
+		<div id="quickousel">
+			<img src="https://source.unsplash.com/category/nature/450x300" />
+			<img src="https://source.unsplash.com/category/people/450x300" />
+			<img src="https://source.unsplash.com/random/450x300" />
+			<img src="https://source.unsplash.com/user/erondu"/>
 		</div>
+		
 	</div>
-<script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
-<script src="quickosel.js"></script>
-</body>
-</html>
+
+	<div id="formDemo">
+		<ul class="button-links">
+			<li>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+					<input type="hidden" name="cmd" value="_s-xclick">
+					<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+					">
+					<input class="beer" type="image" src="img/beer.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+					<img class="beer" alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+			</li>
+			<li><a href="https://github.com/dirkdunn/Quickousel"><img src="img/github.png" /></a></li>
+			<ul>
+				<span class="right json">
+					<code>
+							// Copy && Paste <br>
+							Quickousel.init({<br>
+							"transitionStyle":"fadeIn",<br>
+							"transitionSpeed": 8000,<br>
+							"arrows": false,<br>
+							"button": "dottedsquare"<br>
+						});
+					</code>
+				</span>
+
+				<span class="left forms">
+					<label class="hey">Transition Style</label><br>
+					<select class="transitionStyle">
+						<option value="fadeIn">fadeIn</option>
+						<option value="bounceIn">bounceIn</option>
+						<option value="flipInX">flipInX</option>
+						<option value="flipInY">flipInY</option>
+						<option value="lightSpeedIn">lightSpeedIn</option>
+						<option value="rotateIn">rotateIn</option>
+						<option value="slideInLeft">slideInLeft</option>
+						<option value="slideInRight">slideInRight</option>
+						<option value="zoomIn">zoomIn</option>
+						<option value="zoomInLeft">zoomInLeft</option>
+						<option value="zoomInRight">zoomInRight</option>
+						<option value="rollIn">rollIn</option>
+
+					</select>
+					<br>
+					<label class="hey">Transition Speed (Milliseconds) </label><br>
+					<select class="transitionSpeed">
+						<option value="1000">1000</option>
+						<option value="2000">2000</option>
+						<option value="3000">3000</option>
+						<option value="4000">4000</option>
+						<option value="5000">5000</option>
+						<option value="6000">6000</option>
+						<option value="7000">7000</option>
+						<option value="8000" selected>8000</option>
+						<option value="9000">9000</option>
+						<option value="10000">10000</option>
+						<option value="11000">11000</option>
+						<option value="12000">12000</option>
+
+					</select>
+					<br>
+					<label class="hey">Arrows </label><br>
+					<select class="arrows">
+						<option value="true">true</option>
+						<option value="false" selected>false</option>
+					</select>
+					<!-- 
+						'dottedsquare' : '▦',
+						'solidsquare' : '■',
+						'opensquare' : '□',
+						'bullet' : '•',
+						'opencircle': '○',
+						'solidcircle' : '●',
+						'heart' : '♥',
+						'spade' : '♠',
+						'club' : '♣',
+						'music' : '♪'
+					-->
+					<br>
+					<label class="hey">Button Style </label><br>
+					<select class="buttonStyle">
+						<option value="opensquare">square</option>
+						<option value="solidsquare">solidsquare</option>
+						<option value="dottedsquare" selected>dottedsquare</option>
+						<option value="bullet">bullet</option>
+						<option value="opencircle">opencircle</option>
+						<option value="solidcircle">solidcircle</option>
+						<option value="heart">heart</option>
+						<option value="spade">spade</option>
+						<option value="club">club</option>
+						<option value="music">circle</option>
+					</select>
+				</span>
+
+				
+		</div>
+		<script src="../lib/quickousel.js"></script>
+		<script src="demo.js"></script>
+	</body>
+	</html>

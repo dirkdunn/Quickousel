@@ -1,14 +1,22 @@
+@font-face {
+	font-family:'ralewayRegular';
+	src: url('font/raleway/Raleway-Regular.ttf');
+}
+
 body {
 	text-align:center;
 	padding:1em;
 }
 
 .hey {
-	font-family:sans-serif;
+	font-family:'ralewayRegular', sans-serif, Georgia;
 }
 
 p.hey ,label.hey{
 	font-size:12px;
+}
+p.hey {
+	margin-top:-1em;
 }
 
 label.hey {
@@ -43,15 +51,14 @@ select{
 
 #parent {
 	padding: 1em;
-	width:450px; 
-	height:300px; 
+	width:600px; 
+	height:400px; 
 	box-shadow: 1px 0px 10px #B6B6B6;
 	margin: 0 auto;
 }
 
 #formDemo {
 	max-width:600px;
-	min-width:360px;
 	width:100%;
 	margin: 2em auto;
 }
@@ -60,10 +67,12 @@ select{
 	float:left;
 	width:40%;
 	margin-top:1em;
+	margin-bottom:1em;
 }
 
 #formDemo .right.json {
 	margin-top:1em;
+	margin-bottom:1em;
 	float:right;
 	font-size:1.1em;
 	background-color:#f1f1f1;
@@ -73,13 +82,29 @@ select{
 	text-align:justify;
 }
 
-#formDemo .right.json code {
-	margin:0 auto;
+#formDemo .html {
+	/*margin-top:1em;*/
+	float:right;
+	font-size:1.3em;
+	background-color:#f1f1f1;
+	color:#000;
+	padding:1em;
+	width:95%;
+	text-align:justify;
+}
+
+#formDemo .right.json code, #formDemo .html code{
+	margin:1em auto;
 }
 
 .button-links {
 	margin: 0 auto;
 	padding:0;
+}
+
+h3,p.options {
+	text-align:left;
+	margin-bottom:.1em;
 }
 
 .button-links ul {
@@ -104,9 +129,15 @@ select{
 	max-width:70%;
 }
 
+.button-links li img:hover,
+.button-links li .beer:hover{
+	box-shadow:1px 2px 8px #d9d9d9;
+}
+
 .clearfix {
 	overflow: auto;
 	zoom: 1;
+	clear:both;
 }
 
 @media (max-width:768px){
@@ -115,7 +146,8 @@ select{
 	}
 
 	#parent {
-		max-width:90%;
+		width:450px;
+		height:300px;
 		/*height: auto;*/
 	}
 
@@ -123,17 +155,42 @@ select{
 		float:none;
 		display:block;
 		width:90%;
-		margin: 0 auto;
+		margin: 1em auto;
 	}
 
-	#formDemo .right.json {
-		margin: 1em auto;
+	#formDemo .right.json, #formDemo .html{
+		margin: 0 auto;
 		float:none;
 		display:block;
 		width:85%;
+		font-size:1.1em;
 	}
 
-	#formDemo .right code {
-		/*width:100%;*/
+	#formDemo code {
+		line-height:1.5;
 	}
+
+	h3,p.options {
+		text-align:center;
+	}
+}
+
+@media (max-width:550px){
+	#parent {
+		width:320px;
+		height:240px;
+		/*height: auto;*/
+	}
+
+	h1.hey {
+		font-size:1.5em;
+	}
+}
+
+@media (max-width: 350px){
+	#parent {
+		width:270px;
+		height:180px;
+	}
+	
 }

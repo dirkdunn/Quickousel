@@ -88,7 +88,7 @@ Note: Quickousel uses [animate.css](https://daneden.github.io/animate.css/) for 
 ###### html (array)
 *Add custom HTML to each slide by adding each string of html in an arra, , which will add html to the slide order accordingly*
 
-###### example usagw:
+###### example usage:
 ```
 html: ['<p>html on slide 1</p>',
     '<p>html on slide 2</p>',

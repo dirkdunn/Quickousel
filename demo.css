@@ -59,7 +59,6 @@ select{
 
 #formDemo {
 	max-width:600px;
-	min-width:360px;
 	width:100%;
 	margin: 2em auto;
 }
@@ -178,7 +177,7 @@ h3,p.options {
 
 @media (max-width:550px){
 	#parent {
-		width:360px;
+		width:320px;
 		height:240px;
 		/*height: auto;*/
 	}
@@ -186,4 +185,12 @@ h3,p.options {
 	h1.hey {
 		font-size:1.5em;
 	}
+}
+
+@media (max-width: 350px){
+	#parent {
+		width:270px;
+		height:180px;
+	}
+	
 }

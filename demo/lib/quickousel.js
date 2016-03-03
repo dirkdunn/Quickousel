@@ -78,7 +78,7 @@ TODO:
 				'<span class="arrow right"></span>'
 			].join(""));
 
-	     carousel.find('span.arrow').on('click',function(e){
+	     carousel.find('span.arrow').on(isMobile ? 'touchstart': 'click',function(e){
 	     	var slideHandler = function( nextSlide ){
 	     		switchSlide(  nextSlide, custom.transitionStyle );
 	     		switchButton(nextSlide);
@@ -116,7 +116,7 @@ TODO:
 				carouselButtons.append('<span class="carousel-button button' + (i + 1) + '">'+ button +'</span>')
 		} 
 
-		carouselButtons.find('.carousel-button').on('click',function(e){
+		carouselButtons.find('.carousel-button').on(isMobile ? 'touchstart' : 'click',function(e){
 			if( !$(this).hasClass('active-button') ){
 				var slideNumber = /button(\d{1})/.exec($(this).attr('class')).pop();
 		        switchSlide(slideNumber,custom.transitionStyle);

@@ -31,6 +31,14 @@ That's it, quickousel will auto-generate a responsive carousel seamlessly with t
 
 **Note: Quickousel relies on the css and JS assets within the lib directory, please make sure that you reference quickousel.js or quickousel.min.js within the lib directory, when moving quickousel to your project, do NOT move just the quickousel.js file, but the entire lib directory itself so that the CSS and JS assets can be properly referenced.**
 
+## Mobile Support
+Quickousel natively supports both swipe and touch events. If you wish to turn swipe functionality off, you may add the swipe property to the init function and set it to false like so:
+```
+Quickousel.init({
+    swipe: false
+});
+```
+
 ## Javascript Options
 Quickousel has one method to be optionally called in order to set customizations. customOptions is an object literal that is passed to the init method in order to set certain properties. For a more detailed and visual view of how the init function works, visit the [demo](http://dirkdunn.github.io/Quickousel) page.
 ``` 

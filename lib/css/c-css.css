@@ -71,7 +71,7 @@
 }
 
 #quickousel .carousel-buttons .carousel-button:hover {
-  color: rgba(217, 217, 217, .9)!important;
+  color: rgba(217, 217, 217, .9);
 }
 
 #quickousel .active-button {

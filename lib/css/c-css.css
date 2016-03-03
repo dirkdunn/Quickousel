@@ -74,8 +74,8 @@
   color: rgba(217, 217, 217, .9);
 }
 
-#quickousel .active-button {
-  color: rgba(217, 217, 217, .9)!important;
+#quickousel .carousel-button.active-button {
+  color: rgba(217, 217, 217, .9);
 }
 
 #quickousel ul.carousel, #quickousel ul.carousel li.item{

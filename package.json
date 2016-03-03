@@ -1,0 +1,33 @@
+{
+  "name": "quickousel",
+  "version": "1.2.3",
+  "description": "The easiest carousel to use on the web.",
+  "main": "lib/quickousel.js",
+  "scripts": {
+    "test": "Quickousel.init()"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dirkdunn/Quickousel.git"
+  },
+  "keywords": [
+    "Carousel",
+    "carousel",
+    "css",
+    "easy",
+    "fast",
+    "html",
+    "images",
+    "js",
+    "quickousel",
+    "simple",
+    "sleek",
+    "widget"
+  ],
+  "author": "Dirk Dunn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dirkdunn/Quickousel/issues"
+  },
+  "homepage": "https://github.com/dirkdunn/Quickousel#readme"
+}
